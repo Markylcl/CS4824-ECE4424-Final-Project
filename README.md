@@ -1,4 +1,4 @@
-<center> CS4824-ECE4424-Final-Project<center>
+<h1 align="center"> CS4824-ECE4424-Final-Project</h1>
 
 
 <h2 align="center"> Spam Message Classification Based on the Naive Bayes Classification Algorithm </h2>
@@ -17,7 +17,7 @@ May, 5th, 2019
  
 ## Introduction:
 
-From Spam Message Classification Based on the Naive Bayes Classification Algorithm [1], we trying to reproduce the statement that naive Bayes is a high accurate machine working as a spam filter.  Before the journal demonstrate the statement, they use several critical examples to demonstrate their purpose. For instance, the user for using short message service are increasingly more serious so that the technology of filtering spam messages is significant. Then the journal emphasize the classification is important. The original data set are provided by a mobile operator; the first step is to classifier the original data into seven types which is a text preprocessing. Combination of naïve Bayes algorithm and multi-two-classification would improve the performance. TF-IDF (team frequency-inverse document frequency) algorithm, is a numerical data set that usually help researcher to finish user modelling. The journal also uses Jieba word segmentation to help increase the high accuracy and speed of analysis the Chinese text. In addition, the journal briefly explains the naïve Bayes algorithm which is similar to our class materials. Moreover, the journal expounds how the classification working in their algorithm. The journal also shows the results and a pseudocode of their algorithm.
+From *Spam Message Classification Based on the Naive Bayes Classification Algorithm* [1], we trying to reproduce the statement that naive Bayes is a high accurate machine working as a spam filter.  Before the journal demonstrate the statement, they use several critical examples to demonstrate their purpose. For instance, the user for using short message service are increasingly more serious so that the technology of filtering spam messages is significant. Then the journal emphasize the classification is important. The original data set are provided by a mobile operator; the first step is to classifier the original data into seven types which is a text preprocessing. Combination of naïve Bayes algorithm and multi-two-classification would improve the performance. TF-IDF (team frequency-inverse document frequency) algorithm, is a numerical data set that usually help researcher to finish user modelling. The journal also uses Jieba word segmentation to help increase the high accuracy and speed of analysis the Chinese text. In addition, the journal briefly explains the naïve Bayes algorithm which is similar to our class materials. Moreover, the journal expounds how the classification working in their algorithm. The journal also shows the results and a pseudocode of their algorithm.
 <img width="1080" src="result.JPG"></a>
 Figure 1: The result table form the Spam Message Classification Based on the Naïve Bayes Classification Algorithm [1]
 Our team goal here is to demonstrate whether Naive Bayes is faster than svm and random forest.
@@ -28,11 +28,12 @@ This journal is about Naive Bayes and Svm Spam Filtering. [2]. The author demons
 The author pablov also provide a sample code for us to learn and reproduce the results.
 The result after running the code as following:
  
-###In Large Data Set (5573):
+**In Large Data Set (5573):**
 <img width="1080" src="large.png">
 
 We noticed that the SVM(100% on ham, 87.7% on spam) have higher accuracy than Naive Bayes(100% on ham, 77.7%), which is different from what the paper claims. One possible reason is that the large data set causes the Naive Bayes overfitting, so we take the first 382 data set in the original data set, and the result shows as following:
-###Small Data Set (382):
+
+**Small Data Set (382):**
 <img width="1080" src="small.png">
 
 This time the accuracy of Naive Bayes(100% on ham, 83.3% on spam) is higher than the SVM(100% on ham, 66.7% on spam), and it is also higher than itself when we run it with large data set.
