@@ -23,7 +23,7 @@ Our team goal here is to demonstrate whether Naive Bayes is faster than svm and 
 
 ## Approach:
 
-The first approach is about *Naive Bayes and Svm Spam Filtering*. [2](the code and data are located in nb_and_svm folder) The author demonstrate a similar approach to build a naive bayes spam filter as the paper which is the result that we want to approve. First, the author named pablov who write this website use the same step with our journal, preprocess the data, and generate the number of occurrence for each words, and then use multinomial naive bayes classifier to classify the email/sms. The difference is that, in the paper, it will classify into 6 categories and then make a tag, but this code will only classify whether it is spam or ham. 
+The first approach is about *Naive Bayes and Svm Spam Filtering*. [2] The author demonstrate a similar approach to build a naive bayes spam filter as the paper which is the result that we want to approve. First, the author named pablov who write this website use the same step with our journal, preprocess the data, and generate the number of occurrence for each words, and then use multinomial naive bayes classifier to classify the email/sms. The difference is that, in the paper, it will classify into 6 categories and then make a tag, but this code will only classify whether it is spam or ham. 
 The author pablov also provide a sample code for us to learn and reproduce the results.
 The result after running the code as following:
  
@@ -38,16 +38,24 @@ We noticed that the SVM(100% on ham, 87.7% on spam) have higher accuracy than Na
 
 This time the accuracy of Naive Bayes(100% on ham, 83.3% on spam) is higher than the SVM(100% on ham, 66.7% on spam), and it is also higher than itself when we run it with large data set.
 	
-To further prove and investigate the high performance of naive bayes, we compare the performance of naive bayes with SVM and Random Forest. We use the code from the web and run the program with the same dataset to make sure all comparison is based on the same level. The first step to do this is text cleaning where we remove those words from the document which may not contribute to the information we want to extract. A lot of undesirable characters like punctuation, marks, stop words, digit, etc which may not be helpful in detecting the spam email. This step is already included in the program. In addition, lemmatization is another important process. This process is to group together the different inflected forms of a words so they can be analysed as a single item. For example, “give”, “gave” and “given” should all be represented as “give” group. 
+To further prove and investigate the high performance of naive bayes, we compare the performance of naive bayes with SVM and Random Forest. We use the code from the web[3] and run the program with the same dataset to make sure all comparison is based on the same level. The first step to do this is text cleaning where we remove those words from the document which may not contribute to the information we want to extract. A lot of undesirable characters like punctuation, marks, stop words, digit, etc which may not be helpful in detecting the spam email. This step is already included in the program. In addition, lemmatization is another important process. This process is to group together the different inflected forms of a words so they can be analysed as a single item. For example, “give”, “gave” and “given” should all be represented as “give” group. 
 	
 After text modification, we run the code with training data set, where it comes from our daily emails. Here is our running result. 
+<img width="1080" src="result2.png">
+ 
+From the result, it shows these three methods all gives all high accurate results. SVM and RFT even have more advantages on our test data set. The reason might be that the source of our emails comes from students and the features do not vary a lot. Similar features make the spam filtering easier to be classified. Under this condition, naive bayes seems to have less advantages.
+ 
+
 
  
 ## Conclusion:
 
-The Naive Bayes has better accuracy in small data set than SVM, and the performance is worse than SVM and Random Forest. In certain situations, for example, if the users don’t want to share their data, and the developer need to train the spam filter model locally, Naive Bayes will be a good choice.  
+The Naive Bayes has better accuracy in small data set than SVM, and the performance is worse than SVM and Random Forest when the emails are general. In certain situations, for example, if the users don’t want to share their data, and the developer need to train the spam filter model locally, Naive Bayes will be a good choice. However, in many cases, the emails send to these who have specific identities will have similar features: for example, students will receive a lot of similar emails. Under this condition, naive bayes seems not have much advantages and SVM and random forest perform better to classify these emails.
 
 ## Reference:
+
 [1] Bin Ning, Wu Junwei, Hu Feng, “Spam Message Classification Based on the Naïve Bayes Classification Algorithm” IAENG International Journal of Computer Science, 46:1, 2019 http://www.iaeng.org/IJCS/issues_v46/issue_1/IJCS_46_1_05.pdf
 
 [2]: Pablov, “Spam classification with Naive Bayes and Support Vector Machines.¶” https://www.kaggle.com/pablovargas/naive-bayes-svm-spam-filtering/data
+
+[3]  erdiolmezogullari, https://github.com/erdiolmezogullari/ml-spam-sms-classification
