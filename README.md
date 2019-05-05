@@ -49,10 +49,11 @@ To further prove and investigate the high performance of naive bayes, we compare
 After text modification, we run the code with training data set, where it comes from our daily emails. Here is our running result. 
 
  
-##Conclusion:
+## Conclusion:
 
 The Naive Bayes has better accuracy in small data set than SVM, and the performance is worse than SVM and Random Forest. In certain situations, for example, if the users don’t want to share their data, and the developer need to train the spam filter model locally, Naive Bayes will be a good choice.  
 
-Reference:
+## Reference:
 [1] Bin Ning, Wu Junwei, Hu Feng, “Spam Message Classification Based on the Naïve Bayes Classification Algorithm” IAENG International Journal of Computer Science, 46:1, 2019 http://www.iaeng.org/IJCS/issues_v46/issue_1/IJCS_46_1_05.pdf
+
 [2]: Pablov, “Spam classification with Naive Bayes and Support Vector Machines.¶” https://www.kaggle.com/pablovargas/naive-bayes-svm-spam-filtering/data
