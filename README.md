@@ -32,6 +32,8 @@ The result after running the code as following:
 <img width="1080" src="large.png">
 
 We noticed that the SVM(100% on ham, 87.7% on spam) have higher accuracy than Naive Bayes(100% on ham, 77.7%), which is different from what the paper claims. One possible reason is that the large data set causes the Naive Bayes overfitting, so we take the first 382 data set in the original data set, and the result shows as following:
+
+
 **Small Data Set (382):**
 <img width="1080" src="small.png">
 
