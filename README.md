@@ -1,4 +1,4 @@
-# CS4824-ECE4424-Final-Project
+<h1 align="center"> CS4824-ECE4424-Final-Project</h1>
 
 
 <h1 align="center"> Spam Message Classification Based on the Naive Bayes Classification Algorithm</h1>
@@ -6,16 +6,11 @@
 
 
 					
-Chengliang Lu, Hangming He, Yifan Zhou, Xuan Li
+<h1 align="center"> Chengliang Lu, Hangming He, Yifan Zhou, Xuan Li</h1>
 
 May, 5th, 2019
 
 
-
- 
- 
- 
- 
  
  
 ## Introduction:
