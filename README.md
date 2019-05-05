@@ -2,7 +2,7 @@
 
 
 <h2 align="center"> Spam Message Classification Based on the Naive Bayes Classification Algorithm </h2>
-	<h2>Written by Bin Ning, Wu JunweI, Hu feng</h2>
+	<h2>"center> "Written by Bin Ning, Wu JunweI, Hu feng</h2>
 		
 
 
