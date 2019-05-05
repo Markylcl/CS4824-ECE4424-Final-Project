@@ -23,7 +23,7 @@ Our team goal here is to demonstrate whether Naive Bayes is faster than svm and 
 
 ## Approach:
 
-The first approach is about *Naive Bayes and Svm Spam Filtering*. [2](the code and data is located in nb_and_svm folder) The author demonstrate a similar approach to build a naive bayes spam filter as the paper which is the result that we want to approve. First, the author named pablov who write this website use the same step with our journal, preprocess the data, and generate the number of occurrence for each words, and then use multinomial naive bayes classifier to classify the email/sms. The difference is that, in the paper, it will classify into 6 categories and then make a tag, but this code will only classify whether it is spam or ham. 
+The first approach is about *Naive Bayes and Svm Spam Filtering*. [2](the code and data are located in nb_and_svm folder) The author demonstrate a similar approach to build a naive bayes spam filter as the paper which is the result that we want to approve. First, the author named pablov who write this website use the same step with our journal, preprocess the data, and generate the number of occurrence for each words, and then use multinomial naive bayes classifier to classify the email/sms. The difference is that, in the paper, it will classify into 6 categories and then make a tag, but this code will only classify whether it is spam or ham. 
 The author pablov also provide a sample code for us to learn and reproduce the results.
 The result after running the code as following:
  
