@@ -1,8 +1,8 @@
 <h1 align="center"> CS4824-ECE4424-Final-Project</h1>
 
 
-<h1 align="center"> Spam Message Classification Based on the Naive Bayes Classification Algorithm
-	Written by Bin Ning, Wu JunweI, Hu feng</h1>
+<h1 align="center"> Spam Message Classification Based on the Naive Bayes Classification Algorithm </h1>
+	<h1>Written by Bin Ning, Wu JunweI, Hu feng</h1>
 		
 
 
