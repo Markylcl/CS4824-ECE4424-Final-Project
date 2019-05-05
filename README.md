@@ -29,11 +29,11 @@ The author pablov also provide a sample code for us to learn and reproduce the r
 The result after running the code as following:
  
 In Large Data Set (5573):
-
+<img width="1080" src="large.png">
 
 We noticed that the SVM(100% on ham, 87.7% on spam) have higher accuracy than Naive Bayes(100% on ham, 77.7%), which is different from what the paper claims. One possible reason is that the large data set causes the Naive Bayes overfitting, so we take the first 382 data set in the original data set, and the result shows as following:
 Small Data Set (382):
-
+<img width="1080" src="small.png">
 
 This time the accuracy of Naive Bayes(100% on ham, 83.3% on spam) is higher than the SVM(100% on ham, 66.7% on spam), and it is also higher than itself when we run it with large data set.
 	
@@ -47,6 +47,6 @@ After text modification, we run the code with training data set, where it comes 
 The Naive Bayes has better accuracy in small data set than SVM, and the performance is worse than SVM and Random Forest. In certain situations, for example, if the users don’t want to share their data, and the developer need to train the spam filter model locally, Naive Bayes will be a good choice.  
 
 ## Reference:
-[1] Bin Ning, Wu Junwei, Hu Feng, “Spam Message Classification Based on the Naïve Bayes Classification Algorithm” IAENG International Journal of Computer Science, 46:1, 2019 http://www.iaeng.org/IJCS/issues_v46/issue_1/IJCS_46_1_05.pdf
+[1] Bin Ning, Wu Junwei, Hu Feng, “Spam Message Classification Based on the Naïve Bayes Classification Algorithm” IAENG International Journal of Computer Science, 46:1, 2019 http://www.iaeng.org/IJCS/issues_v46/issue_1/IJCS_46_1_05.pdf
 
 [2]: Pablov, “Spam classification with Naive Bayes and Support Vector Machines.¶” https://www.kaggle.com/pablovargas/naive-bayes-svm-spam-filtering/data
